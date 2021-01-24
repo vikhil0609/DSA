@@ -12,16 +12,17 @@ def delete():
     if len(stack) == 0:
         print("[STACK IS EMPTY CANNOT DELETE ITEMS]")
     else:
-        top = len(stack) - 1
-        print(top)
-        stack.pop()
-        print(f"[ELEMENT DELETED IS {stack[top]}] ")
+        print(f"[DELETED ELEMENT IS {stack.pop()}] ")
         show()
 
 def show():
-    print("[ELEMENTS IN STACK]")
-    for i in range(len(stack)):
-        print(stack[i])
+    if len(stack) <= 0:
+        print("[STACK IS EMPTY]")
+
+    else:
+        print("[ELEMENTS IN STACK]")
+        for i in range(len(stack)):
+            print(stack[i])
 
 
 
