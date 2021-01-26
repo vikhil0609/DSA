@@ -5,7 +5,7 @@ def insert():
     
 
     else:
-        num = input(print('[ENTER A ELEMENT TO ADD IN QUEUE]'))
+        num = input('[ENTER A ELEMENT TO ADD IN QUEUE]')
         queue.append(num)
         show()
 
